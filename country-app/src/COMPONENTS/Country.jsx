@@ -3,7 +3,7 @@ import React from 'react'
 const Country = (props) => {
 
 const {country} =props
-const {name, flags, capital, popuation, area} = country
+const {name, flags, capital, population, area} = country
 
 const RemoveCountry = (name) => {
 
@@ -19,7 +19,7 @@ const RemoveCountry = (name) => {
             <img className='h-[150px] w-[350px]' src={flags.png} alt={name.common} />
             <h3 className='pt-4'>Name: {name.common}</h3>
             <h3>Capital: {capital}</h3>
-            <h3>Population: {popuation}</h3>
+            <h3>Population: {population}</h3>
             <h3>Area: {area}</h3>
             <button className='bg-[tomato] py-2 px-8 rounded-sm hover:bg-[red]' onClick={() => {
                 RemoveCountry(name.common)
